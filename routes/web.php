@@ -25,7 +25,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //============SidebarController==================
-
 Route::get('/all_sidebar', [App\Http\Controllers\SidebarController::class, 'index'])->name('all_sidebar');
 Route::post('/add-image', [App\Http\Controllers\SidebarController::class, 'addimage'])->name('add-image');
 Route::get('/view-sidebar', [App\Http\Controllers\SidebarController::class, 'viewSidebar'])->name('view-sidebar');
@@ -47,4 +46,3 @@ Route::get('About-view', [App\Http\Controllers\AboutUsController::class, 'Aboutv
 Route::get('Edit-About/{id}', [App\Http\Controllers\AboutUsController::class, 'EditAbout'])->name('Edit-About');
 Route::post('update-About', [App\Http\Controllers\AboutUsController::class, 'updateAbout'])->name('update-About');
 Route::get('Delete-About/{id}', [App\Http\Controllers\AboutUsController::class, 'Delete-About'])->name('Delete-About');
-

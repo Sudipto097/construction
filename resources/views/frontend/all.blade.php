@@ -5,10 +5,9 @@
         ->where('status','=',1)
         ->get();
     foreach ($sidebar as $v_admin){?>
-    <div id="hero-section" data-number="3"
-         data-image-1="<img src="{{URL::to($v_admin->image_1)}}">"
-         data-image-2="<img src='{{URL::to($v_admin->image_2)}}'>"
-         data-image-3="<img src='{{URL::to($v_admin->image_3)}}'>" data-effect="fade">
+    <div id="hero-section" data-number="3" data-image-1="{{URL::to($v_admin->image_1)}}"
+         data-image-2="{{URL::to($v_admin->image_2)}}"
+         data-image-3="{{URL::to($v_admin->image_3)}}" data-effect="fade">
         <div class="hero-content">
             <div class="hero-title">
                 <h1>{{$v_admin->text_1}}.</h1>
@@ -16,8 +15,12 @@
                 <h1>{{$v_admin->text_3}}.</h1>
             </div>
         </div>
+{{--        <div class="links">--}}
+{{--            <a class="wprt-button big rounded-3px" href="#">LEAR MORE</a>--}}
+{{--            <a class="link" href="#">OUR FOLIO</a>--}}
+{{--        </div>--}}
 
-        <a class="arrow scroll-target" href="#site-content"></a>
+        <a class="arrow scroll-target" href="{{route('/')}}"></a>
     </div>
     <?php }?>
 

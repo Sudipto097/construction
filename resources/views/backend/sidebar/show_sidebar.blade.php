@@ -35,9 +35,9 @@
                                 <td><img src="{{URL::to($v_img->image_3)}}" style="width:100px; height: 100px;"></td>
                                 <td>
                                     <?php if($v_img->status == '1'){ ?>
-                                    <a href="{{url('/update-about',$v_img->id)}}" class="btn btn-success">Active</a> ||
+                                    <a href="{{url('/status-update-about',$v_img->id)}}" class="btn btn-success">Active</a> ||
                                     <?php }else{ ?>
-                                    <a href="{{url('/update-about',$v_img->id)}}" class="btn btn-danger">Inactive</a> ||
+                                    <a href="{{url('/status-update-about',$v_img->id)}}" class="btn btn-danger">Inactive</a> ||
                                     <?php } ?>
                                     <a href="Delete-about/{{$v_img->id}}" role="button" class="btn btn-danger">Delete</a>
                                 </td>
