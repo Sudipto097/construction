@@ -36,17 +36,15 @@
                                     <div class="col-md-12">
                                         <div class="wprt-spacer" data-desktop="110" data-mobi="40" data-smobi="40"></div>
                                     </div><!-- /.col-md-12 -->
-
                                     <div class="col-md-4">
-
                                         <div class="service-item clearfix text-center">
                                             <div class="thumb"><img src="{{asset('/frontend/assets/img/services/4.jpg')}}" alt="image" /></div>
                                             <div class="service-item-wrap">
                                                 <h3 class="title font-size-18"><a href="#">Construction Consultant</a></h3>
                                                 <p class="desc">Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique. Vivamus enim quam, tincidunt vel blandit eu, molestie eget arcu.</p>
-                                                <div class="link">
-                                                    <a href="#" class="wprt-button small rounded-3px">READ MORE</a>
-                                                </div>
+{{--                                                <div class="link">--}}
+{{--                                                    <a href="#" class="wprt-button small rounded-3px">READ MORE</a>--}}
+{{--                                                </div>--}}
                                             </div>
                                         </div>
 
@@ -59,9 +57,9 @@
                                             <div class="service-item-wrap">
                                                 <h3 class="title font-size-18"><a href="#">Resconstruction Services</a></h3>
                                                 <p class="desc">Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique. Vivamus enim quam, tincidunt vel blandit eu, molestie eget arcu.</p>
-                                                <div class="link">
-                                                    <a href="#" class="wprt-button small rounded-3px">READ MORE</a>
-                                                </div>
+{{--                                                <div class="link">--}}
+{{--                                                    <a href="#" class="wprt-button small rounded-3px">READ MORE</a>--}}
+{{--                                                </div>--}}
                                             </div>
                                         </div>
 
@@ -74,9 +72,9 @@
                                             <div class="service-item-wrap">
                                                 <h3 class="title font-size-18"><a href="#">Architectural Design</a></h3>
                                                 <p class="desc">Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique. Vivamus enim quam, tincidunt vel blandit eu, molestie eget.</p>
-                                                <div class="link">
-                                                    <a href="#" class="wprt-button small rounded-3px">READ MORE</a>
-                                                </div>
+{{--                                                <div class="link">--}}
+{{--                                                    <a href="#" class="wprt-button small rounded-3px">READ MORE</a>--}}
+{{--                                                </div>--}}
                                             </div>
                                         </div>
                                     </div><!-- /.col-md-4 -->
@@ -662,7 +660,6 @@
                                                 </div>
                                             </div><!-- /#team-wrap -->
                                         </div><!-- /.wprt-team -->
-
                                         <div class="wprt-spacer" data-desktop="70" data-mobi="50" data-smobi="40"></div>
                                     </div><!-- /.col-md-12 -->
                                 </div><!-- /.row -->

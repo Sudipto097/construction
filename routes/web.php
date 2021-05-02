@@ -46,3 +46,12 @@ Route::get('About-view', [App\Http\Controllers\AboutUsController::class, 'Aboutv
 Route::get('Edit-About/{id}', [App\Http\Controllers\AboutUsController::class, 'EditAbout'])->name('Edit-About');
 Route::post('update-About', [App\Http\Controllers\AboutUsController::class, 'updateAbout'])->name('update-About');
 Route::get('Delete-About/{id}', [App\Http\Controllers\AboutUsController::class, 'Delete-About'])->name('Delete-About');
+
+//==================WhyChooseUsUsController=====================
+Route::get('Why-Choose-Us', [App\Http\Controllers\WhyChooseUsUsController::class, 'index'])->name('Why-Choose-Us');
+Route::post('Add-Choose', [App\Http\Controllers\WhyChooseUsUsController::class, 'AddChoose'])->name('Add-Choose');
+Route::get('view-Why-Choose-Us', [App\Http\Controllers\WhyChooseUsUsController::class, 'ViewWhyChooseUs'])->name('view-Why-Choose-Us');
+Route::get('WhyChooseUs-Delete/{id}', [App\Http\Controllers\WhyChooseUsUsController::class, 'WhyChooseUsDelete'])->name('WhyChooseUs-Delete');
+Route::get('WhyChooseUs-Edit/{id}', [App\Http\Controllers\WhyChooseUsUsController::class, 'WhyChooseUsEdit'])->name('WhyChooseUs-Edit');
+Route::post('Update-Choose', [App\Http\Controllers\WhyChooseUsUsController::class, 'UpdateChoose'])->name('Update-Choose');
+Route::get('status-Why-Choose-Us/{id}', [App\Http\Controllers\WhyChooseUsUsController::class, 'statusUpdate'])->name('status-update-about');

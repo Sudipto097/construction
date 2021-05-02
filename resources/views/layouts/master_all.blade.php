@@ -147,10 +147,10 @@
         <footer id="footer">
             <div id="footer-widgets" class="container style-1">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="widget widget_about margin-bottom-25">
                             <div class="margin-bottom-35">
-                                <img src="{{asset('/frontend/assets/img/logo-light%402x.png')}}" width="204" height="30" alt="image" />
+                                <img src="{{asset('/frontend/assets/img/logo_12.png')}}" width="204" height="30" alt="image" />
                             </div>
                             <p>Nullam vel enim risus. Integer rhoncus hendrerit sem egestas porttitor.</p>
                             </section>
@@ -165,29 +165,11 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
-                        <div class="widget widget_tag_cloud">
-                            <h2 class="widget-title">Popular tags</h2>
-                            <div class="tagcloud">
-                                <a href="#">Architectural</a>
-                                <a href="#">Builder</a>
-                                <a href="#">Fire</a>
-                                <a href="#">Building</a>
-                                <a href="#">Garden design</a>
-                                <a href="#">Interior</a>
-                                <a href="#">Marketing events</a>
-                                <a href="#">ThemeForest</a>
-                                <a href="#">Construction</a>
-                                <a href="#">Exterior</a>
-                                <a href="#">Highway</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-3">
+
+                    <div class="col-md-4">
                         <div class="widget widget_links">
                             <h2 class="widget-title">Useful links</h2>
-
                             <ul class="links col2">
                                 <li><a href="#">Home</a></li>
                                 <li class="last"><a href="#">Help Center</a></li>
@@ -205,7 +187,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="widget widget_instagram">
                             <h2 class="widget-title">Instagram photos</h2>
 
@@ -271,10 +253,11 @@
 
                     <div class="bottom-bar-menu">
                         <ul class="bottom-nav">
-                            <li><a href="#/">HOME</a></li>
-                            <li><a href="#/">ABOUT</a></li>
-                            <li><a href="#/">SERVICES</a></li>
-                            <li><a href="#/">CONTACT</a></li>
+                            <li><a href="{{route('/')}}">HOME</a></li>
+                            <li><a href="{{route('Galleries')}}">Galleries</a></li>
+                            <li><a href="{{route('JobReference')}}">Job Reference</a></li>
+                            <li><a href="{{route('ABOUTUS')}}">ABOUT US</a></li>
+                            <li><a href="{{route('Contact')}}">CONTACT</a></li>
                         </ul>
                     </div><!-- /.bottom-bar-menu -->
                 </div>

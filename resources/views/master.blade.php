@@ -393,6 +393,16 @@
                             <li><a href="{{route('About-view')}}">View ABOUT US</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="uil-envelope"></i>
+                            <span>WHY CHOOSE US ?</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="{{route('Why-Choose-Us')}}">Add WHY CHOOSE US</a></li>
+                            <li><a href="{{route('view-Why-Choose-Us')}}">View WHY CHOOSE US</a></li>
+                        </ul>
+                    </li>
 
                 </ul>
             </div>
