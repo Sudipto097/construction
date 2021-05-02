@@ -42,9 +42,9 @@
 
                                 <td>
                                     <?php if($v_img->status == '1'){ ?>
-                                    <a href="{{url('/status-Why-Choose-Us',$v_img->id)}}" class="btn btn-success">Active</a> ||
+                                    <a href="{{url('/status-Why-Choose-Us',$v_img->id)}}" class="btn btn-success">Active</a>
                                     <?php }else{ ?>
-                                    <a href="{{url('/status-Why-Choose-Us',$v_img->id)}}" class="btn btn-danger">Inactive</a> ||
+                                    <a href="{{url('/status-Why-Choose-Us',$v_img->id)}}" class="btn btn-danger">Inactive</a>
                                     <?php } ?>
                                     <a href="WhyChooseUs-Delete/{{$v_img->id}}" role="button" class="btn btn-danger">Delete</a><br>
                                     <a href="WhyChooseUs-Edit/{{$v_img->id}}" role="button" class="btn btn-primary">Edit</a>

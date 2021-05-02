@@ -5,7 +5,7 @@
         ->where('status','=',1)
         ->get();
     foreach ($sidebar as $v_admin){?>
-    <div id="hero-section" data-number="3" data-image-1="{{URL::to($v_admin->image_1)}}"
+    <div id="hero-section" data-number="3"  data-image-1="{{URL::to($v_admin->image_1)}}"
          data-image-2="{{URL::to($v_admin->image_2)}}"
          data-image-3="{{URL::to($v_admin->image_3)}}" data-effect="fade">
         <div class="hero-content">
@@ -465,10 +465,15 @@
 
                         <!-- WHY US-->
                         <section id="why-us" class="wprt-section">
+                            <?php
+                            $sidebar = DB::table('tbl_Why_Choose_Us')
+                                ->where('status','=',1)
+                                ->get();
+                            foreach ($sidebar as $v_admin){?>
                             <div class="container-fluid no-padding">
                                 <div class="row no-margin">
                                     <div class="col-md-6 no-padding">
-                                        <img src="{{asset('/frontend/assets/img/group.jpg')}}" alt="image">
+                                        <img  src="{{URL::to($v_admin->image)}}" alt="image">
                                     </div><!-- /.col-md-6 -->
 
                                     <div class="col-md-6 no-padding">
@@ -480,28 +485,37 @@
                                             <div class="wprt-spacer" data-desktop="50" data-mobi="30" data-smobi="30"></div>
 
                                             <div class="wprt-toggle bg-white style-1">
-                                                <h3 class="toggle-title">Employees have many years of experience</h3>
-                                                <div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Curabitur tortor mi, eleifend ornare lobortis non. Nulla porta purus quis iaculis ultrices. Proin aliquam sem at nibh hendrerit sagittis. Nullam ornare odio eu lacus tincidunt malesuada. Sed eu vestibulum elit. Curabitur tortor mi, eleifend ornare.</div>
+                                                <h3 class="toggle-title">{{$v_admin->question_1}}</h3>
+                                                <div class="toggle-content">
+                                                    {{$v_admin->answer_1}}
+                                                </div>
                                             </div>
 
                                             <div class="wprt-toggle bg-white active style-1">
-                                                <h3 class="toggle-title">Quality construction continues after the project</h3>
-                                                <div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Curabitur tortor mi, eleifend ornare lobortis non. Nulla porta purus quis iaculis ultrices. Proin aliquam sem at nibh hendrerit sagittis. Nullam ornare odio eu lacus tincidunt malesuada. Sed eu vestibulum elit. Curabitur tortor mi, eleifend ornare.</div>
+                                                <h3 class="toggle-title">{{$v_admin->question_2}}</h3>
+                                                <div class="toggle-content">
+                                                    {{$v_admin->answer_2}}
+                                                </div>
                                             </div>
 
                                             <div class="wprt-toggle bg-white style-1">
-                                                <h3 class="toggle-title">We use technology to do the job more quickly</h3>
-                                                <div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Curabitur tortor mi, eleifend ornare lobortis non. Nulla porta purus quis iaculis ultrices. Proin aliquam sem at nibh hendrerit sagittis. Nullam ornare odio eu lacus tincidunt malesuada. Sed eu vestibulum elit. Curabitur tortor mi, eleifend ornare.</div>
+                                                <h3 class="toggle-title">{{$v_admin->question_3}}</h3>
+                                                <div class="toggle-content">
+                                                    {{$v_admin->answer_3}}
+                                                </div>
                                             </div>
 
                                             <div class="wprt-toggle bg-white style-1">
-                                                <h3 class="toggle-title">Employees are continually trained on safety issues</h3>
-                                                <div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Curabitur tortor mi, eleifend ornare lobortis non. Nulla porta purus quis iaculis ultrices. Proin aliquam sem at nibh hendrerit sagittis. Nullam ornare odio eu lacus tincidunt malesuada. Sed eu vestibulum elit. Curabitur tortor mi, eleifend ornare.</div>
+                                                <h3 class="toggle-title">{{$v_admin->question_4}}</h3>
+                                                <div class="toggle-content">
+                                                    {{$v_admin->answer_4}}
+                                                </div>
                                             </div>
                                         </div><!-- /.wprt-content-box -->
                                     </div><!-- /.col-md-6 -->
                                 </div><!-- /.row -->
                             </div><!-- /.container-fluid -->
+                        <?php }?>
                         </section>
 
                         <!-- TEAM -->
