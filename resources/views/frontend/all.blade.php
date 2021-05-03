@@ -24,11 +24,17 @@
     </div>
     <?php }?>
 
+
     <div id="main-content" class="site-main clearfix">
         <div id="content-wrap">
             <div class="site-content clearfix">
                 <div id="inner-" class="inner-content-wrap">
                     <div class="page-content">
+                    <?php
+                    $sidebar = DB::table('tbl_threetext')
+                        ->where('status','=',1)
+                        ->get();
+                    foreach ($sidebar as $v_admin){?>
                         <!-- Intro -->
                         <section class="wprt-section intro">
                             <div class="container">
@@ -38,13 +44,10 @@
                                     </div><!-- /.col-md-12 -->
                                     <div class="col-md-4">
                                         <div class="service-item clearfix text-center">
-                                            <div class="thumb"><img src="{{asset('/frontend/assets/img/services/4.jpg')}}" alt="image" /></div>
+                                            <div class="thumb"><img src="{{URL::to($v_admin->image_1)}}" alt="image" /></div>
                                             <div class="service-item-wrap">
-                                                <h3 class="title font-size-18"><a href="#">Construction Consultant</a></h3>
-                                                <p class="desc">Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique. Vivamus enim quam, tincidunt vel blandit eu, molestie eget arcu.</p>
-{{--                                                <div class="link">--}}
-{{--                                                    <a href="#" class="wprt-button small rounded-3px">READ MORE</a>--}}
-{{--                                                </div>--}}
+                                                <h3 class="title font-size-18"><a href="#">{{$v_admin->text_big_1}}</a></h3>
+                                                <p class="desc">{{$v_admin->small_text_1}}</p>
                                             </div>
                                         </div>
 
@@ -53,13 +56,10 @@
 
                                     <div class="col-md-4">
                                         <div class="service-item clearfix text-center">
-                                            <div class="thumb"><img src="{{asset('/frontend/assets/img/services/5.jpg')}}" alt="image" /></div>
+                                            <div class="thumb"><img src="{{URL::to($v_admin->image_2)}}" alt="image" /></div>
                                             <div class="service-item-wrap">
-                                                <h3 class="title font-size-18"><a href="#">Resconstruction Services</a></h3>
-                                                <p class="desc">Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique. Vivamus enim quam, tincidunt vel blandit eu, molestie eget arcu.</p>
-{{--                                                <div class="link">--}}
-{{--                                                    <a href="#" class="wprt-button small rounded-3px">READ MORE</a>--}}
-{{--                                                </div>--}}
+                                                <h3 class="title font-size-18"><a href="#">{{$v_admin->text_big_2}}</a></h3>
+                                                <p class="desc">{{$v_admin->small_text_2}}</p>
                                             </div>
                                         </div>
 
@@ -68,13 +68,10 @@
 
                                     <div class="col-md-4">
                                         <div class="service-item clearfix text-center">
-                                            <div class="thumb"><img src="{{asset('/frontend/assets/img/services/6.jpg')}}" alt="image" /></div>
+                                            <div class="thumb"><img src="{{URL::to($v_admin->image_3)}}" alt="image" /></div>
                                             <div class="service-item-wrap">
-                                                <h3 class="title font-size-18"><a href="#">Architectural Design</a></h3>
-                                                <p class="desc">Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique. Vivamus enim quam, tincidunt vel blandit eu, molestie eget.</p>
-{{--                                                <div class="link">--}}
-{{--                                                    <a href="#" class="wprt-button small rounded-3px">READ MORE</a>--}}
-{{--                                                </div>--}}
+                                                <h3 class="title font-size-18"><a href="#">{{$v_admin->text_big_3}}</a></h3>
+                                                <p class="desc">{{$v_admin->small_text_3}}</p>
                                             </div>
                                         </div>
                                     </div><!-- /.col-md-4 -->
@@ -85,6 +82,7 @@
                                 </div><!-- /.row -->
                             </div><!-- /.container -->
                         </section>
+                    <?php }?>
 
                         <!-- FACTS -->
                         <section id="facts" class="wprt-section parallax">
@@ -186,7 +184,7 @@
                                                         <img src="{{asset('/frontend/assets/img/projects/1.jpg')}}" alt="image" />
                                                         <figcaption>
                                                             <div>
-                                                                <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
+                                                                <h2><a target="_blank" href="#">LUXURY BUILDINGS</a></h2>
                                                                 <p>Construction</p>
                                                             </div>
                                                         </figcaption>
@@ -208,7 +206,7 @@
                                                         <img src="{{asset('/frontend/assets/img/projects/2.jpg')}}" alt="image" />
                                                         <figcaption>
                                                             <div>
-                                                                <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
+                                                                <h2><a target="_blank" href="#">LUXURY BUILDINGS</a></h2>
                                                                 <p>Construction</p>
                                                             </div>
                                                         </figcaption>
@@ -230,7 +228,7 @@
                                                         <img src="{{asset('/frontend/assets/img/projects/3.jpg')}}" alt="image" />
                                                         <figcaption>
                                                             <div>
-                                                                <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
+                                                                <h2><a target="_blank" href="#">LUXURY BUILDINGS</a></h2>
                                                                 <p>Construction</p>
                                                             </div>
                                                         </figcaption>
@@ -252,7 +250,7 @@
                                                         <img src="{{asset('/frontend/assets/img/projects/4.jpg')}}" alt="image" />
                                                         <figcaption>
                                                             <div>
-                                                                <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
+                                                                <h2><a target="_blank" href="#">LUXURY BUILDINGS</a></h2>
                                                                 <p>Construction</p>
                                                             </div>
                                                         </figcaption>
@@ -274,7 +272,7 @@
                                                         <img src="{{asset('/frontend/assets/img/projects/5.jpg')}}" alt="image" />
                                                         <figcaption>
                                                             <div>
-                                                                <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
+                                                                <h2><a target="_blank" href="#">LUXURY BUILDINGS</a></h2>
                                                                 <p>Construction</p>
                                                             </div>
                                                         </figcaption>
@@ -296,7 +294,7 @@
                                                         <img src="{{asset('/frontend/assets/img/projects/6.jpg')}}" alt="image" />
                                                         <figcaption>
                                                             <div>
-                                                                <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
+                                                                <h2><a target="_blank" href="#">LUXURY BUILDINGS</a></h2>
                                                                 <p>Construction</p>
                                                             </div>
                                                         </figcaption>
@@ -318,7 +316,7 @@
                                                         <img src="{{asset('/frontend/assets/img/projects/7.jpg')}}" alt="image" />
                                                         <figcaption>
                                                             <div>
-                                                                <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
+                                                                <h2><a target="_blank" href="#">LUXURY BUILDINGS</a></h2>
                                                                 <p>Construction</p>
                                                             </div>
                                                         </figcaption>
@@ -340,7 +338,7 @@
                                                         <img src="{{asset('/frontend/assets/img/projects/8.jpg')}}" alt="image" />
                                                         <figcaption>
                                                             <div>
-                                                                <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
+                                                                <h2><a target="_blank" href="#">LUXURY BUILDINGS</a></h2>
                                                                 <p>Construction</p>
                                                             </div>
                                                         </figcaption>
@@ -378,82 +376,22 @@
                                     <div class="col-md-12">
                                         <div class="wprt-testimonials style-2 has-bullets bullet-style-1 bullet50" data-layout="slider" data-column="3" data-column2="3" data-column3="2" data-column4="1" data-gaph="30" data-gapv="30">
                                             <div id="testimonials-wrap" class="cbp">
+                                                @if($Other)
+                                                @foreach($Other as $v_all)
                                                 <div class="cbp-item">
                                                     <div class="customer clearfix">
                                                         <div class="inner">
-                                                            <div class="image"><img src="{{asset('/frontend/assets/img/testimonials/1.jpg')}}" alt="image" /></div>
-                                                            <h4 class="name">GEORGE SLOWS</h4>
-                                                            <div class="position">Builder manager</div>
-                                                            <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
+                                                            <div class="image"><img src="{{URL::to($v_all->image)}}" alt="image" /></div>
+                                                            <h4 class="name">{{$v_all->name}}</h4>
+                                                            <div class="position">{{$v_all->designation}}</div>
+                                                            <blockquote class="whisper">
+                                                                {{$v_all->small_text}}
+                                                            </blockquote>
                                                         </div>
                                                     </div>
                                                 </div><!-- /.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="customer clearfix">
-                                                        <div class="inner">
-                                                            <div class="image"><img src="{{asset('/frontend/assets/img/testimonials/2.jpg')}}" alt="image" /></div>
-                                                            <h4 class="name">BARBARA DOUGLAS</h4>
-                                                            <div class="position">Builder manager</div>
-                                                            <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
-                                                        </div>
-                                                    </div>
-                                                </div><!-- /.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="customer clearfix">
-                                                        <div class="inner">
-                                                            <div class="image"><img src="{{asset('/frontend/assets/img/testimonials/3.jpg')}}" alt="image" /></div>
-                                                            <h4 class="name">GEORGE SLOWS</h4>
-                                                            <div class="position">Builder manager</div>
-                                                            <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
-                                                        </div>
-                                                    </div>
-                                                </div><!-- /.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="customer clearfix">
-                                                        <div class="inner">
-                                                            <div class="image"><img src="{{asset('/frontend/assets/img/testimonials/1.jpg')}}" alt="image" /></div>
-                                                            <h4 class="name">GEORGE SLOWS</h4>
-                                                            <div class="position">Builder manager</div>
-                                                            <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
-                                                        </div>
-                                                    </div>
-                                                </div><!-- /.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="customer clearfix">
-                                                        <div class="inner">
-                                                            <div class="image"><img src="{{asset('/frontend/assets/img/testimonials/2.jpg')}}" alt="image" /></div>
-                                                            <h4 class="name">GEORGE SLOWS</h4>
-                                                            <div class="position">Builder manager</div>
-                                                            <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
-                                                        </div>
-                                                    </div>
-                                                </div><!-- /.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="customer clearfix">
-                                                        <div class="inner">
-                                                            <div class="image"><img src="{{asset('/frontend/assets/img/testimonials/3.jpg')}}" alt="image" /></div>
-                                                            <h4 class="name">GEORGE SLOWS</h4>
-                                                            <div class="position">Builder manager</div>
-                                                            <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
-                                                        </div>
-                                                    </div>
-                                                </div><!-- /.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="customer clearfix">
-                                                        <div class="inner">
-                                                            <div class="image"><img src="{{asset('/frontend/assets/img/testimonials/1.jpg')}}" alt="image" /></div>
-                                                            <h4 class="name">GEORGE SLOWS</h4>
-                                                            <div class="position">Builder manager</div>
-                                                            <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
-                                                        </div>
-                                                    </div>
-                                                </div><!-- /.cbp-item -->
+                                                @endforeach
+                                                @endif
                                             </div><!-- /#service-wrap -->
                                         </div><!-- /.wprt-testimonials -->
 

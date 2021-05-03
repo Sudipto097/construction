@@ -9,8 +9,9 @@ use mysql_xdevapi\Table;
 class IndexController extends Controller
 {
     public function home(){
+        $Other=DB::table('tbl_What_Other_Say_About_Us')->get();
 
-        return view('frontend.all');
+        return view('frontend.all',compact('Other'));
     }
     public function index(){
        return view('frontend.Galleries');

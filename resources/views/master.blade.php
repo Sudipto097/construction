@@ -44,7 +44,7 @@
             <div class="d-flex">
                 <!-- LOGO -->
                 <div class="navbar-brand-box">
-                    <a href="index.html" class="logo logo-dark">
+                    <a href="{{route('home')}}" class="logo logo-dark">
                                 <span class="logo-sm">
                                     <img src="{{asset('backend/assets/images/logo-sm.png')}}" alt="" height="22">
                                 </span>
@@ -53,7 +53,7 @@
                                 </span>
                     </a>
 
-                    <a href="index.html" class="logo logo-light">
+                    <a href="{{route('home')}}" class="logo logo-light">
                                 <span class="logo-sm">
                                     <img src="{{asset('backend/assets/images/logo-sm.png')}}" alt="" height="22">
                                 </span>
@@ -324,7 +324,7 @@
 
         <!-- LOGO -->
         <div class="navbar-brand-box">
-            <a href="index.html" class="logo logo-dark">
+            <a href="{{route('home')}}" class="logo logo-dark">
                         <span class="logo-sm">
                             <img src="{{asset('backend/assets/images/logo-sm.png')}}" alt="" height="22">
                         </span>
@@ -333,7 +333,7 @@
                         </span>
             </a>
 
-            <a href="index.html" class="logo logo-light">
+            <a href="{{route('home')}}" class="logo logo-light">
                         <span class="logo-sm">
                             <img src="{{asset('backend/assets/images/logo-sm.png')}}" alt="" height="22">
                         </span>
@@ -386,6 +386,16 @@
                     <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class="uil-envelope"></i>
+                            <span>3-Text</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="{{route('ThreeText')}}">Add 3-Text</a></li>
+                            <li><a href="{{route('ThreeText-View')}}">View 3-Text</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="uil-envelope"></i>
                             <span>ABOUT US</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
@@ -403,6 +413,17 @@
                             <li><a href="{{route('view-Why-Choose-Us')}}">View WHY CHOOSE US</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="uil-envelope"></i>
+                            <span>OTHER SAY ABOUT US</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="{{route('What_Other_Say_About_Us')}}">Add WHAT OTHER SAY ABOUT US</a></li>
+                            <li><a href="{{route('View_What_Other_Say_About_Us')}}">View WHAT OTHER SAY ABOUT US</a></li>
+                        </ul>
+                    </li>
+
 
                 </ul>
             </div>
