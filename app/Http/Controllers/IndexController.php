@@ -16,7 +16,10 @@ class IndexController extends Controller
     public function index(){
         $Galleries_1=DB::table('tbl_Galleries')->get();
         $Galleries_2=DB::table('tbl_Galleries_two')->get();
-       return view('frontend.Galleries',compact('Galleries_1','Galleries_2'));
+        $Galleries_3=DB::table('tbl_Galleries_Three')->get();
+        $Galleries_4=DB::table('tbl_Galleries_Four')->get();
+        $Galleries_5=DB::table('tbl_Galleries_five')->get();
+       return view('frontend.Galleries',compact('Galleries_1','Galleries_2','Galleries_3','Galleries_4','Galleries_5'));
     }
     public function Contact(){
         return view('frontend.Contact');

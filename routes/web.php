@@ -86,3 +86,13 @@ Route::get('Galleries_Three', [App\Http\Controllers\GalleriesOneController::clas
 Route::post('Galleries_Add_Three', [App\Http\Controllers\GalleriesOneController::class, 'GalleriesAddThree'])->name('Galleries_Add_Three');
 Route::get('Show_Galleries_Three', [App\Http\Controllers\GalleriesOneController::class, 'ShowGalleriesThree'])->name('Show_Galleries_Three');
 Route::get('Delete-Galleries-Three/{id}', [App\Http\Controllers\GalleriesOneController::class, 'DeleteGalleriesThree'])->name('Delete-Galleries-Three');
+
+Route::get('Galleries_Four', [App\Http\Controllers\GalleriesOneController::class, 'GalleriesFour'])->name('Galleries_Four');
+Route::post('Galleries_Add_Four', [App\Http\Controllers\GalleriesOneController::class, 'GalleriesAddFour'])->name('Galleries_Add_Four');
+Route::get('Show_Galleries_Four', [App\Http\Controllers\GalleriesOneController::class, 'ShowGalleriesFour'])->name('Show_Galleries_Four');
+Route::get('Delete-Galleries-Four/{id}', [App\Http\Controllers\GalleriesOneController::class, 'DeleteGalleriesFour'])->name('Delete-Galleries-Four');
+
+Route::get('Galleries_Five', [App\Http\Controllers\GalleriesOneController::class, 'GalleriesFive'])->name('Galleries_Five');
+Route::post('Galleries_Add_Five', [App\Http\Controllers\GalleriesOneController::class, 'GalleriesAddFive'])->name('Galleries_Add_Five');
+Route::get('Show_Galleries_Five', [App\Http\Controllers\GalleriesOneController::class, 'ShowGalleriesFive'])->name('Show_Galleries_Five');
+Route::get('Delete-Galleries-Five/{id}', [App\Http\Controllers\GalleriesOneController::class, 'DeleteGalleriesFive'])->name('Delete-Galleries-Five');

@@ -140,4 +140,97 @@ class GalleriesOneController extends Controller
             ->delete();
         return back();
     }
+
+    public function GalleriesFour(){
+        return view('backend.Galleries-4.Add_Galleries');
+    }
+    public function GalleriesAddFour(Request $request){
+        $validated = $request->validate([
+            'image' => 'mimes:jpg,jpeg,png,JPG,PNG|max:12000',
+        ]);
+
+        $data=array();
+        $data['text']=$request->text;
+        $image=$request->file('image');
+        if ($image) {
+            $image_name=hexdec(uniqid());
+            $ext=strtolower($image->getClientOriginalExtension());
+            $image_full_name=$image_name.'.'.$ext;
+            $upload_path='public/upload/';
+            $image_url=$upload_path.$image_full_name;
+            $success=$image->move($upload_path,$image_full_name);
+            $data['image']=$image_url;
+            // unlink($request->old_image);
+            DB::table('tbl_Galleries_Four')
+                ->insert($data);
+            // return back();
+            return redirect('Show_Galleries_Four');
+
+        }else{
+            $data['image']=$request->old_image;
+
+            DB::table('tbl_Galleries_Four')
+                ->insert($data);
+            //return back();
+            return redirect('Show_Galleries_Four');
+        }
+    }
+    public function ShowGalleriesFour(){
+        $all=DB::table('tbl_Galleries_Four')->get();
+        return view('backend.Galleries-4.show_Galleries',compact('all'));
+    }
+    public function DeleteGalleriesFour($id){
+        DB::table('tbl_Galleries_Four')
+            ->where('id',$id)
+            ->delete();
+        return back();
+    }
+    //================
+    public function GalleriesFive(){
+        return view('backend.Galleries-5.Add_Galleries');
+    }
+    public function GalleriesAddFive(Request $request){
+        $validated = $request->validate([
+            'image' => 'mimes:jpg,jpeg,png,JPG,PNG|max:12000',
+        ]);
+
+        $data=array();
+        $data['text']=$request->text;
+        $image=$request->file('image');
+        if ($image) {
+            $image_name=hexdec(uniqid());
+            $ext=strtolower($image->getClientOriginalExtension());
+            $image_full_name=$image_name.'.'.$ext;
+            $upload_path='public/upload/';
+            $image_url=$upload_path.$image_full_name;
+            $success=$image->move($upload_path,$image_full_name);
+            $data['image']=$image_url;
+            // unlink($request->old_image);
+            DB::table('tbl_Galleries_five')
+                ->insert($data);
+            // return back();
+            return redirect('Show_Galleries_Five');
+
+        }else{
+            $data['image']=$request->old_image;
+
+            DB::table('tbl_Galleries_five')
+                ->insert($data);
+            //return back();
+            return redirect('Show_Galleries_Five');
+        }
+    }
+    public function ShowGalleriesFive(){
+        $all=DB::table('tbl_Galleries_five')->get();
+        return view('backend.Galleries-5.show_Galleries',compact('all'));
+    }
+    public function DeleteGalleriesFive($id){
+        DB::table('tbl_Galleries_five')
+            ->where('id',$id)
+            ->delete();
+        return back();
+    }
+
+
+
 }

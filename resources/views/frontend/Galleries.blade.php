@@ -92,34 +92,22 @@
                                         <div class="wprt-galleries galleries w-570px" data-width="135" data-margin="10">
                                             <div id="wprt-slider" class="flexslider">
                                                 <ul class="slides">
+                                                    @foreach($Galleries_3 as $v_img)
                                                     <li class="flex-active-slide">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/1.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/1.jpg')}}" alt="image" />
+                                                        <a class="zoom" href="{{URL::to($v_img->image)}}"><i class="fa fa-arrows-alt"></i></a>
+                                                        <img src="{{URL::to($v_img->image)}}" alt="image" />
                                                     </li>
+                                                    @endforeach
 
-                                                    <li class="flex-active-slide">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/2.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/2.jpg')}}" alt="image" />
-                                                    </li>
-
-                                                    <li class="flex-active-slide">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/3.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/3.jpg')}}" alt="image" />
-                                                    </li>
-
-                                                    <li class="flex-active-slide">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/4.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/4.jpg')}}" alt="image" />
-                                                    </li>
                                                 </ul>
                                             </div>
 
                                             <div id="wprt-carousel" class="flexslider">
                                                 <ul class="slides">
-                                                    <li><img src="{{asset('/frontend/assets/img/gallery/1-s.jpg')}}" alt="image"></li>
-                                                    <li><img src="{{asset('/frontend/assets/img/gallery/2-s.jpg')}}" alt="image"></li>
-                                                    <li><img src="{{asset('/frontend/assets/img/gallery/3-s.jpg')}}" alt="image"></li>
-                                                    <li><img src="{{asset('/frontend/assets/img/gallery/4-s.jpg')}}" alt="image"></li>
+                                                    @foreach($Galleries_3 as $v_img)
+
+                                                    <li><img src="{{URL::to($v_img->image)}}" alt="image"></li>
+                                                    @endforeach
                                                 </ul>
                                             </div>
                                         </div>
@@ -137,26 +125,14 @@
 
                                         <div class="wprt-galleries-grid arrow-style-1 has-bullets bullet-style-2 bullet30 has-arrows arrow60 arrow-position-2" data-layout="slider" data-column="1" data-column2="1" data-column3="1" data-column4="1" data-gaph="0" data-gapv="0">
                                             <div id="images-wrap" class="cbp">
+                                                @foreach($Galleries_4 as $v_img)
                                                 <div class="cbp-item">
                                                     <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/1.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/1.jpg')}}" alt="image" />
+                                                        <a class="zoom" href="{{URL::to($v_img->image)}}"><i class="fa fa-arrows-alt"></i></a>
+                                                        <img src="{{URL::to($v_img->image)}}" alt="image" />
                                                     </div>
                                                 </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/2.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/2.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/3.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/3.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
+                                                @endforeach
                                             </div><!-- /#images-wrap -->
                                         </div><!--/.wprt-galleries-grid -->
                                     </div><!-- /.col-md-6 -->
@@ -173,47 +149,14 @@
 
                                         <div class="wprt-galleries-grid" data-layout="grid" data-column="3" data-column2="2" data-column3="2" data-column4="1" data-gaph="10" data-gapv="10">
                                             <div id="images-wrap" class="cbp">
+                                                @foreach($Galleries_5 as $v_img)
                                                 <div class="cbp-item">
                                                     <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/1.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/1.jpg')}}" alt="image" />
+                                                        <a class="zoom" href="{{URL::to($v_img->image)}}"><i class="fa fa-arrows-alt"></i></a>
+                                                        <img src="{{URL::to($v_img->image)}}" alt="image" />
                                                     </div>
                                                 </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/5.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/5.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/2.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/2.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/6.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/6.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/7.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/7.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/4.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/4.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
+                                                @endforeach
                                             </div><!-- /#images-wrap -->
                                         </div><!--/.wprt-galleries-grid -->
 
