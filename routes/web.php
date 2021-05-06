@@ -70,3 +70,4 @@ Route::post('Add_ThreeText', [App\Http\Controllers\ThreeTextController::class, '
 Route::get('ThreeText-View', [App\Http\Controllers\ThreeTextController::class, 'ThreeTextView'])->name('ThreeText-View');
 Route::get('Three_text_Delete/{id}', [App\Http\Controllers\ThreeTextController::class, 'ThreetextDelete'])->name('Three_text_Delete');
 Route::get('three-update-about/{id}', [App\Http\Controllers\ThreeTextController::class, 'statusUpdate'])->name('three-update-about');
+
