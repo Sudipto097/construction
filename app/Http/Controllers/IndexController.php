@@ -33,4 +33,16 @@ class IndexController extends Controller
         $about=DB::table('tbl_about')->get();
         return view('frontend.ABOUTUS',compact("about"));
     }
+    public function usermessage(Request $request){
+        $data=array();
+        $data['name']=$request->name;
+        $data['email']=$request->email;
+        $data['subject']=$request->subject;
+        $data['message']=$request->message;
+        DB::table('tbl_user_message')
+            ->insert($data);
+        return back();
+     //   return redirect('view-Why-Choose-Us');
+
+    }
 }

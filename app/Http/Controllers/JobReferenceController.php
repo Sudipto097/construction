@@ -50,4 +50,9 @@ class JobReferenceController extends Controller
         return back();
     }
 
+    public function ViewUserMessage(){
+        $all=DB::table('tbl_user_message')->get();
+        return view('backend.UserMessage.View_User_Message',compact('all'));
+    }
+
 }

@@ -59,7 +59,8 @@
                                     </div><!-- /.col-md-4 -->
 
                                     <div class="col-md-8">
-                                        <form class="wprt-contact-form" method="post" action="http://vprowand.com/html5/construction/demo/includes/contact/contact-process.php">
+                                        <form class="wprt-contact-form" method="post" action="{{route('user-message')}}">
+                                            @csrf
                                             <div class="inner">
                                                 <div class="left-side">
                                                     <div class="input-wrap">
@@ -75,7 +76,8 @@
                                                         <textarea class="" tabindex="5" placeholder="Message *" name="message" id="message" required></textarea>
                                                     </div>
                                                     <div class="send-wrap">
-                                                        <input type="submit" value="SEND MESSAGE" id="submit" name="submit" class="submit">
+
+                                                        <button type="submit">SEND MESSAGE</button>
                                                     </div>
                                                 </div>
                                             </div>

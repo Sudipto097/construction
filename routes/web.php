@@ -18,6 +18,7 @@ Route::get('/Galleries', [App\Http\Controllers\IndexController::class, 'index'])
 Route::get('/Contact', [App\Http\Controllers\IndexController::class, 'Contact'])->name('Contact');
 Route::get('/Job-Reference', [App\Http\Controllers\IndexController::class, 'JobReference'])->name('JobReference');
 Route::get('/ABOUT-US', [App\Http\Controllers\IndexController::class, 'ABOUTUS'])->name('ABOUTUS');
+Route::post('/user-message', [App\Http\Controllers\IndexController::class, 'usermessage'])->name('user-message');
 //==================frontend==================
 
 Auth::routes();
@@ -38,6 +39,9 @@ Route::get('view-jobreference', [App\Http\Controllers\JobReferenceController::cl
 Route::get('Edit-jobreference/{id}', [App\Http\Controllers\JobReferenceController::class, 'Editjobreference'])->name('Edit-jobreference');
 Route::get('Delete-jobreference/{id}', [App\Http\Controllers\JobReferenceController::class, 'Deletejobreference'])->name('Delete-jobreference');
 Route::post('update-jobreference', [App\Http\Controllers\JobReferenceController::class, 'updatejobreference'])->name('update-jobreference');
+
+
+Route::get('View_User_Message', [App\Http\Controllers\JobReferenceController::class, 'ViewUserMessage'])->name('View_User_Message');
 
 //==================AboutUsController=====================
 Route::get('About-Us', [App\Http\Controllers\AboutUsController::class, 'index'])->name('About-Us');
@@ -63,7 +67,7 @@ Route::get('ThreeText-View', [App\Http\Controllers\ThreeTextController::class, '
 Route::get('Three_text_Delete/{id}', [App\Http\Controllers\ThreeTextController::class, 'ThreeTextView'])->name('Three_text_Delete');
 Route::get('three-update-about/{id}', [App\Http\Controllers\ThreeTextController::class, 'ThreeTextView'])->name('three-update-about');
 
-//==================ThreeTextController=====================
+//==================WhatOtherSayAboutUsController=====================
 Route::get('What_Other_Say_About_Us', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'index'])->name('What_Other_Say_About_Us');
 Route::post('Add-OTHER', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'AddOTHER'])->name('Add-OTHER');
 Route::get('View_What_Other_Say_About_Us', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'ViewOTHER'])->name('View_What_Other_Say_About_Us');
