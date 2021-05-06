@@ -55,3 +55,18 @@ Route::get('WhyChooseUs-Delete/{id}', [App\Http\Controllers\WhyChooseUsUsControl
 Route::get('WhyChooseUs-Edit/{id}', [App\Http\Controllers\WhyChooseUsUsController::class, 'WhyChooseUsEdit'])->name('WhyChooseUs-Edit');
 Route::post('Update-Choose', [App\Http\Controllers\WhyChooseUsUsController::class, 'UpdateChoose'])->name('Update-Choose');
 Route::get('status-Why-Choose-Us/{id}', [App\Http\Controllers\WhyChooseUsUsController::class, 'statusUpdate'])->name('status-update-about');
+
+//==================ThreeTextController=====================
+Route::get('ThreeText', [App\Http\Controllers\ThreeTextController::class, 'index'])->name('ThreeText');
+Route::post('Add_ThreeText', [App\Http\Controllers\ThreeTextController::class, 'AddThreeText'])->name('Add_ThreeText');
+Route::get('ThreeText-View', [App\Http\Controllers\ThreeTextController::class, 'ThreeTextView'])->name('ThreeText-View');
+Route::get('Three_text_Delete/{id}', [App\Http\Controllers\ThreeTextController::class, 'ThreeTextView'])->name('Three_text_Delete');
+Route::get('three-update-about/{id}', [App\Http\Controllers\ThreeTextController::class, 'ThreeTextView'])->name('three-update-about');
+
+//==================ThreeTextController=====================
+Route::get('What_Other_Say_About_Us', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'index'])->name('What_Other_Say_About_Us');
+Route::post('Add-OTHER', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'AddOTHER'])->name('Add-OTHER');
+Route::get('View_What_Other_Say_About_Us', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'ViewOTHER'])->name('View_What_Other_Say_About_Us');
+Route::get('Other_Say-Delete/{id}', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'OtherSayDelete'])->name('Other_Say-Delete');
+Route::get('Other_Say-Edit/{id}', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'OtherSayEdit'])->name('Other_Say-Edit');
+Route::post('update-OTHER', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'OtherSayEdit'])->name('update-OTHER');
