@@ -423,8 +423,24 @@
                             <li><a href="{{route('View_What_Other_Say_About_Us')}}">View WHAT OTHER SAY ABOUT US</a></li>
                         </ul>
                     </li>
-
-
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="uil-envelope"></i>
+                            <span>Galleries</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="{{route('Galleries_One')}}">Add Galleries 1</a></li>
+                            <li><a href="{{route('Show_Galleries_One')}}">View Galleries 1</a></li>
+                            <li><a href="{{route('Galleries_Two')}}">Add Galleries 2</a></li>
+                            <li><a href="{{route('Show_Galleries_Two')}}">View Galleries 2</a></li>
+                            <li><a href="{{route('Galleries_Three')}}">Add Galleries 3</a></li>
+                            <li><a href="{{route('View_What_Other_Say_About_Us')}}">View Galleries 3</a></li>
+                            <li><a href="{{route('What_Other_Say_About_Us')}}">Add Galleries 4</a></li>
+                            <li><a href="{{route('View_What_Other_Say_About_Us')}}">View Galleries 4</a></li>
+                            <li><a href="{{route('What_Other_Say_About_Us')}}">Add Galleries 5</a></li>
+                            <li><a href="{{route('View_What_Other_Say_About_Us')}}">View Galleries 5</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!-- Sidebar -->

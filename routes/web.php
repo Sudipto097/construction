@@ -70,3 +70,19 @@ Route::get('View_What_Other_Say_About_Us', [App\Http\Controllers\WhatOtherSayAbo
 Route::get('Other_Say-Delete/{id}', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'OtherSayDelete'])->name('Other_Say-Delete');
 Route::get('Other_Say-Edit/{id}', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'OtherSayEdit'])->name('Other_Say-Edit');
 Route::post('update-OTHER', [App\Http\Controllers\WhatOtherSayAboutUsController::class, 'OtherSayEdit'])->name('update-OTHER');
+
+//==================GalleriesOneController=====================
+Route::get('Galleries_One', [App\Http\Controllers\GalleriesOneController::class, 'index'])->name('Galleries_One');
+Route::post('Galleries_Add', [App\Http\Controllers\GalleriesOneController::class, 'addGalleries'])->name('Galleries_Add');
+Route::get('Show_Galleries_One', [App\Http\Controllers\GalleriesOneController::class, 'ShowGalleriesOne'])->name('Show_Galleries_One');
+Route::get('Delete-Galleries/{id}', [App\Http\Controllers\GalleriesOneController::class, 'DeleteGalleries'])->name('Delete-Galleries');
+
+Route::get('Galleries_Two', [App\Http\Controllers\GalleriesOneController::class, 'GalleriesTwo'])->name('Galleries_Two');
+Route::post('Galleries_Add_Two', [App\Http\Controllers\GalleriesOneController::class, 'GalleriesAddTwo'])->name('Galleries_Add_Two');
+Route::get('Show_Galleries_Two', [App\Http\Controllers\GalleriesOneController::class, 'ShowGalleriesTwo'])->name('Show_Galleries_Two');
+Route::get('Delete-Galleries-two/{id}', [App\Http\Controllers\GalleriesOneController::class, 'DeleteGalleriestwo'])->name('Delete-Galleries-two');
+
+Route::get('Galleries_Three', [App\Http\Controllers\GalleriesOneController::class, 'GalleriesThree'])->name('Galleries_Three');
+Route::post('Galleries_Add_Three', [App\Http\Controllers\GalleriesOneController::class, 'GalleriesAddThree'])->name('Galleries_Add_Three');
+Route::get('Show_Galleries_Three', [App\Http\Controllers\GalleriesOneController::class, 'ShowGalleriesThree'])->name('Show_Galleries_Three');
+Route::get('Delete-Galleries-Three/{id}', [App\Http\Controllers\GalleriesOneController::class, 'DeleteGalleriesThree'])->name('Delete-Galleries-Three');

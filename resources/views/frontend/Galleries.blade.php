@@ -40,61 +40,15 @@
 
                                         <div class="wprt-galleries-grid has-bullets bullet-style-1 bullet30 has-arrows arrow-style-1 arrow-position-2" data-layout="slider" data-column="3" data-column2="3" data-column3="2" data-column4="1" data-gaph="30" data-gapv="30">
                                             <div id="images-wrap" class="cbp">
+                                                @foreach($Galleries_1 as $v_img)
                                                 <div class="cbp-item">
                                                     <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/1.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/1.jpg')}}" alt="image" />
+                                                        <a class="zoom" href="{{URL::to($v_img->image)}}"><i class="fa fa-arrows-alt"></i></a>
+                                                        <img src="{{URL::to($v_img->image)}}" alt="image" />
                                                     </div>
                                                 </div><!--/.cbp-item -->
+                                                @endforeach
 
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/2.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/2.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/3.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/3.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/4.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/4.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/1.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/1.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/2.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/2.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/3.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/3.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/4.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/4.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
                                             </div><!-- /#images-wrap -->
                                         </div><!--/.wprt-galleries-grid -->
                                     </div>
@@ -110,54 +64,15 @@
 
                                         <div class="wprt-galleries-grid has-bullets bullet-style-2 bullet30" data-layout="slider" data-column="4" data-column2="3" data-column3="2" data-column4="1" data-gaph="10" data-gapv="10">
                                             <div id="images-wrap" class="cbp">
+                                                @foreach($Galleries_2 as $v_img)
                                                 <div class="cbp-item">
                                                     <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/1.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/1.jpg')}}" alt="image" />
+                                                        <a class="zoom" href="{{URL::to($v_img->image)}}"><i class="fa fa-arrows-alt"></i></a>
+                                                        <img src="{{URL::to($v_img->image)}}" alt="image" />
                                                     </div>
                                                 </div><!--/.cbp-item -->
+                                                @endforeach
 
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/2.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/2.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/3.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/3.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/4.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/4.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/1.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/1.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/2.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/2.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
-
-                                                <div class="cbp-item">
-                                                    <div class="item-wrap">
-                                                        <a class="zoom" href="{{asset('/frontend/assets/img/gallery/3.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                                                        <img src="{{asset('/frontend/assets/img/gallery/3.jpg')}}" alt="image" />
-                                                    </div>
-                                                </div><!--/.cbp-item -->
                                             </div><!-- /#images-wrap -->
                                         </div><!--/.wprt-galleries-grid -->
                                     </div>
