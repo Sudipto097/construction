@@ -450,6 +450,16 @@
                             <li><a href="{{route('View_User_Message')}}">View User Message</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="uil-envelope"></i>
+                            <span>Our Team</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="{{route('OurTeam-add')}}">Add Our Team</a></li>
+                            <li><a href="{{route('About-view')}}">View Our Team</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!-- Sidebar -->
@@ -474,13 +484,13 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <script>document.write(new Date().getFullYear())</script>
-                        © Minible.
+                        © Sudipto.
                     </div>
                     <div class="col-sm-6">
                         <div class="text-sm-end d-none d-sm-block">
-                            Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://themesbrand.com/"
+                            Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://www.facebook.com/developer.sudipto/"
                                                                                          target="_blank"
-                                                                                         class="text-reset">Themesbrand</a>
+                                                                                         class="text-reset">Sudipto</a>
                         </div>
                     </div>
                 </div>

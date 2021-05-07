@@ -23,7 +23,21 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176044039-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176044039-1');
+    </script>
+
+
+
 </head>
 
 <body>
@@ -247,7 +261,10 @@
                 <div class="bottom-bar-inner-wrap">
 
                     <div class="bottom-bar-content">
-                        <div id="copyright">Sudipto.
+                        <div id="copyright"><script>document.write(new Date().getFullYear())</script>
+                             <a href="https://www.facebook.com/developer.sudipto/"
+                                 target="_blank"
+                                 class="text-reset">© Sudipto</a>
                         </div><!-- /#copyright -->
                     </div><!-- /.bottom-bar-content -->
 
@@ -286,3 +303,5 @@
 
 </html>
 
+
+{{-- )g!#U?{dTP{b --}}

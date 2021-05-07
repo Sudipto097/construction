@@ -100,3 +100,11 @@ Route::get('Galleries_Five', [App\Http\Controllers\GalleriesOneController::class
 Route::post('Galleries_Add_Five', [App\Http\Controllers\GalleriesOneController::class, 'GalleriesAddFive'])->name('Galleries_Add_Five');
 Route::get('Show_Galleries_Five', [App\Http\Controllers\GalleriesOneController::class, 'ShowGalleriesFive'])->name('Show_Galleries_Five');
 Route::get('Delete-Galleries-Five/{id}', [App\Http\Controllers\GalleriesOneController::class, 'DeleteGalleriesFive'])->name('Delete-Galleries-Five');
+
+//============OurTeamController==================
+Route::get('/OurTeam-add', [App\Http\Controllers\OurTeamController::class, 'index'])->name('OurTeam-add');
+Route::post('/ADD-OurTeam', [App\Http\Controllers\OurTeamController::class, 'ADDOurTeam'])->name('ADD-OurTeam');
+Route::get('/View-OurTeam', [App\Http\Controllers\OurTeamController::class, 'ViewOurTeam'])->name('View-OurTeam');
+Route::get('/our-Delete/{id}', [App\Http\Controllers\OurTeamController::class, 'ourDelete'])->name('our-Delete');
+Route::get('/our-Edit/{id}', [App\Http\Controllers\OurTeamController::class, 'ourEdit'])->name('our-Edit');
+Route::post('/update-team', [App\Http\Controllers\OurTeamController::class, 'UpdateOurTeam'])->name('update-team');
