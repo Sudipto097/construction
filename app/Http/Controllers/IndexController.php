@@ -10,8 +10,9 @@ class IndexController extends Controller
 {
     public function home(){
         $Other=DB::table('tbl_What_Other_Say_About_Us')->get();
+        $Team=DB::table('tbl_our_team')->get();
 
-        return view('frontend.all',compact('Other'));
+        return view('frontend.all',compact('Other','Team'));
     }
     public function index(){
         $Galleries_1=DB::table('tbl_Galleries')->get();
@@ -19,6 +20,8 @@ class IndexController extends Controller
         $Galleries_3=DB::table('tbl_Galleries_Three')->get();
         $Galleries_4=DB::table('tbl_Galleries_Four')->get();
         $Galleries_5=DB::table('tbl_Galleries_five')->get();
+
+
        return view('frontend.Galleries',compact('Galleries_1','Galleries_2','Galleries_3','Galleries_4','Galleries_5'));
     }
     public function Contact(){

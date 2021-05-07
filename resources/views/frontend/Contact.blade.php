@@ -24,8 +24,10 @@
                 <div id="inner-content" class="inner-content-wrap">
                     <div class="page-content">
                         <section class="wprt-section">
-                            <div id="gmap" class="wprt-map-1"></div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.2692220187782!2d90.43327601429667!3d23.737777095176813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9c71df46669%3A0x8fdde18b1f60e4e2!2sSky%20View%20S.F%20Tower%20Shopping%20Complex!5e0!3m2!1sen!2sbd!4v1598120027745!5m2!1sen!2sbd" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
                             <div class="wprt-spacer" data-desktop="100" data-mobi="60" data-smobi="60"></div>
+
 
                             <div class="container">
                                 <div class="row">
@@ -43,17 +45,18 @@
 
                                     <div class="col-md-4">
                                         <h5>Address</h5>
-                                        <p>68 Havemeyer St, Brooklyn, NY 11211<br> United States</p>
+                                        <p>Dhaka Office : Sky View S.F Tower Shopping Complex, 65/3,(1st floor, Building planner office) Kodomtola,Dhaka</p>
+                                        <p>Khulna Office:7/1 Hazi meher Ali road Iqbalnagar khulna.</p>
 
                                         <div class="wprt-spacer" data-desktop="15" data-mobi="0" data-smobi="0"></div>
 
                                         <h5>Phone number</h5>
-                                        <p>+1 718-955-2838 or +1 718-955-3290</p>
+                                        <p>+88 01762790097, +880 01829211820</p>
 
                                         <div class="wprt-spacer" data-desktop="15" data-mobi="0" data-smobi="0"></div>
 
                                         <h5>E-mail address</h5>
-                                        <p>contact@construction.com</p>
+                                        <p>exploitcons@gmail.com</p>
 
                                         <div class="wprt-spacer" data-desktop="0" data-mobi="10" data-smobi="10"></div>
                                     </div><!-- /.col-md-4 -->

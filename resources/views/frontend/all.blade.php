@@ -251,141 +251,23 @@
 
                                         <div class="wprt-team has-bullets bullet-style-1" data-layout="slider" data-column="4" data-column2="3" data-column3="2" data-column4="1" data-gaph="30" data-gapv="30">
                                             <div id="team-wrap" class="cbp">
-                                                <div class="cbp-item">
-                                                    <div class="member">
-                                                        <div class="inner">
-                                                            <div class="image">
-                                                                <div class="inner">
-                                                                    <img src="{{asset('/frontend/assets/img/team/1.jpg')}}" alt="image" />
+                                                @foreach($Team as $v_oure)
+                                                    <div class="cbp-item">
+                                                        <div class="member">
+                                                            <div class="inner">
+                                                                <div class="image">
+                                                                    <div class="inner">
+                                                                        <img src="{{URL::to($v_oure->image)}}" alt="image" />
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="texts">
-                                                                <h4 class="name">Richard Wagner</h4>
-                                                                <div class="position">Civil Engineer</div>
+                                                                <div class="texts">
+                                                                    <h4 class="name">{{$v_oure->name}}</h4>
+                                                                    <div class="position">{{$v_oure->designation}}</div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="cbp-item">
-                                                    <div class="member">
-                                                        <div class="inner">
-                                                            <div class="image">
-                                                                <div class="inner">
-                                                                    <img src="{{asset('/frontend/assets/img/team/2.jpg')}}" alt="image" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="texts">
-                                                                <h4 class="name">Sarah Spence</h4>
-                                                                <div class="position">Construction Assistant</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cbp-item">
-                                                    <div class="member">
-                                                        <div class="inner">
-                                                            <div class="image">
-                                                                <div class="inner">
-                                                                    <img src="{{asset('/frontend/assets/img/team/3.jpg')}}" alt="image" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="texts">
-                                                                <h4 class="name">John Halpern</h4>
-                                                                <div class="position">Construction Manager</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cbp-item">
-                                                    <div class="member">
-                                                        <div class="inner">
-                                                            <div class="image">
-                                                                <div class="inner">
-                                                                    <img src="{{asset('/frontend/assets/img/team/4.jpg')}}" alt="image" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="texts">
-                                                                <h4 class="name">Tommy Atkins</h4>
-                                                                <div class="position">Electricians</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cbp-item">
-                                                    <div class="member">
-                                                        <div class="inner">
-                                                            <div class="image">
-                                                                <div class="inner">
-                                                                    <img src="{{asset('/frontend/assets/img/team/1.jpg')}}" alt="image" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="texts">
-                                                                <h4 class="name">John Joe</h4>
-                                                                <div class="position">Junior Architect</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cbp-item">
-                                                    <div class="member">
-                                                        <div class="inner">
-                                                            <div class="image">
-                                                                <div class="inner">
-                                                                    <img src="{{asset('/frontend/assets/img/team/2.jpg')}}" alt="image" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="texts">
-                                                                <h4 class="name">Richard Wagner</h4>
-                                                                <div class="position">Civil Engineer</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cbp-item">
-                                                    <div class="member">
-                                                        <div class="inner">
-                                                            <div class="image">
-                                                                <div class="inner">
-                                                                    <img src="{{asset('/frontend/assets/img/team/3.jpg')}}" alt="image" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="texts">
-                                                                <h4 class="name">Sarah Spence</h4>
-                                                                <div class="position">Construction Assistant</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cbp-item">
-                                                    <div class="member">
-                                                        <div class="inner">
-                                                            <div class="image">
-                                                                <div class="inner">
-                                                                    <img src="{{asset('/frontend/assets/img/team/4.jpg')}}" alt="image" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="texts">
-                                                                <h4 class="name">John Halpern</h4>
-                                                                <div class="position">Construction Manager</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cbp-item">
-                                                    <div class="member">
-                                                        <div class="inner">
-                                                            <div class="image">
-                                                                <div class="inner">
-                                                                    <img src="{{asset('/frontend/assets/img/team/1.jpg')}}" alt="image" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="texts">
-                                                                <h4 class="name">Tommy Atkins</h4>
-                                                                <div class="position">Electricians</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                @endforeach
                                             </div><!-- /#team-wrap -->
                                         </div><!-- /.wprt-team -->
                                         <div class="wprt-spacer" data-desktop="70" data-mobi="50" data-smobi="40"></div>
